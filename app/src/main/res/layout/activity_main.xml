@@ -1,0 +1,53 @@
+
+<LinearLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="escribe algo"
+        android:layout_weight="10"
+        android:id="@+id/inputETx"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="agregar"
+        android:layout_weight="15"
+        android:id="@+id/addBtn"/>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_weight="60"
+    android:id="@+id/addedElementsLst">
+
+
+</ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:layout_weight="1"
+            android:id="@+id/clearBtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="continuar"
+            android:layout_weight="1"
+            android:id="@+id/continueBtn"/>
+    </LinearLayout>
+
+</LinearLayout>
